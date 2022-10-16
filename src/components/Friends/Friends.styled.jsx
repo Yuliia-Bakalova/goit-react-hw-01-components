@@ -19,15 +19,11 @@ export const Stat = styled.span`
   position: absolute;
   left: 0;
   top: 30%;
-  width: 7px;
-  height: 7px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-    background-color: ${props => {
-    if (props.status) {
-      return 'green';
-    } else {
-      return 'red';
-    }
+    background-color: ${p=> {
+    return p.isOnline ? 'green' : 'red';
   }};
 `;
 export const Avatar = styled.img`
